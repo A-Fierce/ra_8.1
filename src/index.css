@@ -11,3 +11,38 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.table {
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 25px;
+  align-items: start;
+}
+
+.table__list {
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  display: grid;
+}
+
+.table__button {
+  border: 1px gray solid;
+  height: 48px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  text-align: center;
+  transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+  padding: 15px 15px 14px;
+  cursor: pointer;
+}
+
+.table__button_primary {
+  background-color: #1e0b3d;
+  color: white
+}
